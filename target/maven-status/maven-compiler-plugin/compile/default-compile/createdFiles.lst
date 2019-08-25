@@ -10,3 +10,4 @@ com/anuradha/perfectaligner/web/SmithWatermanController.class
 com/anuradha/perfectaligner/util/DynamicProgramming.class
 com/anuradha/perfectaligner/util/NeedlemanWunsch.class
 com/anuradha/perfectaligner/util/SmithWaterman.class
+com/anuradha/perfectaligner/Application.class
