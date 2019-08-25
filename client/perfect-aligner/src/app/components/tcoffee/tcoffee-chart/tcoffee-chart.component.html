@@ -1,0 +1,15 @@
+
+<br>
+<!--chart-->
+<div style="background: white;">
+
+    <canvas id="myAreaChart" width="100%" height="30" baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+
+</div>

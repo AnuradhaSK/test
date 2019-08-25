@@ -1,0 +1,17 @@
+<br>
+<div align="center"><h2>{{title|uppercase}}</h2></div>
+<br>
+
+<div class="container color-light">
+
+        <app-sw-form ></app-sw-form>
+
+  <div >
+    <!--<mat-spinner align="center" [style.display]=" showSpinner ?'block':'none'"></mat-spinner>-->
+
+    <app-sw-grid *ngIf="sharingService.getVisibility()" ></app-sw-grid>
+  </div>
+
+</div>
+
+

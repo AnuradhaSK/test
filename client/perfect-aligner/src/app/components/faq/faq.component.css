@@ -1,0 +1,142 @@
+.container{
+  display: grid;
+  grid-template-columns: 50% auto;
+
+}
+
+.col{
+  padding: .4cm 1.3cm;
+}
+
+.color-dark{
+  background: #2885c4;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 4px 9px 0px 1px;
+  box-shadow: 6px 6px 5px #444;
+  -moz-box-shadow: 6px 6px 5px #444;
+  -webkit-box-shadow: 6px 6px 5px #444;
+}
+
+.color-light{
+  background: #5783f1;
+}
+
+.life-container{
+  background: #3fa0e1;
+  padding: .5cm;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+body {
+  margin-top: 30px;
+  background-color: #eee;
+}
+
+.list-group.help-group {
+  margin-bottom: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+.list-group.help-group .faq-list {
+  display: block;
+  top: auto;
+  margin: 0 0 32px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+.list-group.help-group .faq-list .list-group-item {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #616161;
+  transition: background-color 1.2s;
+}
+.list-group.help-group .faq-list .list-group-item i.mdi {
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+.list-group.help-group .faq-list .list-group-item:hover {
+  background-color:#C0C0C0;
+}
+.list-group.help-group .faq-list .list-group-item.active {
+  background-color: #C0C0C0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+.list-group.help-group .faq-list .list-group-item:last-of-type {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 0;
+}
+
+.tab-content.panels-faq {
+  padding: 0;
+  border: 0;
+}
+
+.panel.panel-help {
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+  padding-bottom: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #C0C0C0;
+  margin: 0 0 16px;
+}
+.panel.panel-help a[href^="#"],
+.panel.panel-help a[href^="#"]:hover,
+.panel.panel-help a[href^="#"]:focus {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.panel.panel-help .panel-heading {
+  background-color: #f6f6f6;
+  padding: 0 16px;
+  line-height: 48px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.panel.panel-help .panel-heading h2 {
+  margin: 0;
+  padding: 14px 0 14px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.panel.panel-help .panel-body {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-top: 0;
+}
+.panel.panel-help .panel-body p {
+  margin: 0 0 20px;
+}
+.panel.panel-help .panel-body p:last-of-type {
+  margin: 0;
+}
+
+.in{
+  display: block !important;
+}
+p{
+  font-size: 12px;
+  font-family: 'Open Sans', verdana, arial, sans-serif;
+}

@@ -1,0 +1,77 @@
+.timeline-shell {
+  overflow-x: auto;
+}
+
+.timeline-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 50px;
+  z-index: 1;
+}
+.timeline-header .header-blank,
+.timeline-header .header-item {
+  float: left;
+  height: 50px;
+  /*border-bottom: 1px solid #BEBEBE;
+  border-right: 1px solid #BEBEBE;*/
+  background: white;
+  font-size: 11px;
+}
+.timeline-header .header-blank {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  width: 100px;
+  z-index: 2;
+}
+.timeline-header .header-item {
+  width: 20px;
+}
+
+.header-item .item-label {
+  text-align: center;
+}
+.header-item .item-sublabel {
+  display: flex;
+}
+.header-item .item-sublabel .sublabel-value {
+  flex: 1;
+  text-align: center;
+}
+
+.timeline-body .body-details-cell,
+.timeline-body .body-graph-cell {
+  float: left;
+  height: 20px;
+ /* border-bottom: 1px solid #bebebe;
+  border-right: 1px solid #bebebe;*/
+  background: white;
+  text-align: center;
+  cursor: move;
+}
+.timeline-body .body-details-cell {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100px;
+}
+.timeline-body .body-graph-cell {
+  width: 20px;
+}
+div.a {
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+
+}
+
+div.a:hover {
+  overflow: visible;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  padding-right: 16px;
+}

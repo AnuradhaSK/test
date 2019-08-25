@@ -1,0 +1,32 @@
+<div *ngIf="!submitted" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="container-fluid" style="background-color:white; padding-top: 1rem; border-radius: 20px; border: 1px solid;">
+        <div class="form_main">
+          <h4 class="heading"><strong>Input</strong> for alignment <span></span></h4>
+          <div class="form">
+            <form (ngSubmit)="onSubmit()" #nwalgoForm="ngForm">
+
+              <label>String 1</label>
+            <input class="txt" type="text" style="text-transform:uppercase" name="Stringone"  [(ngModel)]=" stringOne" placeholder="String 1 (i.e CCATGTA)" required>
+            <label>String 2</label>
+            <input class="txt" type="text" style="text-transform:uppercase" name="Stringtwo" [(ngModel)]=" stringTwo" placeholder="String 2 (i.e CAATGAA)" required>
+            <label>Match Score</label>
+            <input class="txt"id="match" type="number"  min="1" name="match" pattern= "[0-9]+" [(ngModel)]="match" placeholder="match" required>
+            <label>Mismatch Score</label>
+            <input class="txt"type="number" name="mismatch" max="0" [(ngModel)]="mismatch" placeholder="mismatch" required>
+            <label>Gap Penalty</label>
+            <input class="txt"type="number" max="0" name= "gap" [(ngModel)]="gap" placeholder="gap" required>
+        <input class="txt2" type="submit" [disabled]="!nwalgoForm.form.valid" [value]="btnText" [disabled]= "alignStop"
+               (click)="onSubmit();showGrid()" >
+
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
