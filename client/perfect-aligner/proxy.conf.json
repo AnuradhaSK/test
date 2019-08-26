@@ -1,6 +1,6 @@
 {
   "/PerfectAligner": {
-    "target": "https://perfec.herokuapp.com:80",
+    "target": "http://localhost:4200",
     "secure": false
   }
 }

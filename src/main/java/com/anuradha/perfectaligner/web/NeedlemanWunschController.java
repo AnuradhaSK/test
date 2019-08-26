@@ -2,19 +2,21 @@ package com.anuradha.perfectaligner.web;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.anuradha.perfectaligner.util.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONArray;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
 @RestController
 public class NeedlemanWunschController {
 
-    @CrossOrigin("http://perfec.herokuapp.com")
-    @GetMapping("/needlemanwunsch")
+    @CrossOrigin("*")
+    @GetMapping("/PerfectAligner/needlemanwunsch")
     public String getVal(String sequence1, String sequence2, String match, String mismatch, String gap) {
 
         // create a needleman wunsch object

@@ -15,8 +15,8 @@ import java.util.List;
 @RestController
 public class SmithWatermanController {
 
-    @CrossOrigin("http://perfec.herokuapp.com")
-    @GetMapping("/smithwaterman")
+    @CrossOrigin("*")
+    @GetMapping("/PerfectAligner/smithwaterman")
     public String getVal(String sequence1, String sequence2, String match, String mismatch, String gap) {
 
         // create smithwaterman object
